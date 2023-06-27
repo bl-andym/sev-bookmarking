@@ -9,8 +9,7 @@ export default function App() {
 
   // on mount retrieve localStorage bookmarks
   useEffect(() => {
-    const lsBookmarks = JSON.parse(localStorage.getItem("bookmarks")) || [];
-
+    const lsBookmarks = JSON.parse(localStorage.getItem("bookmarks")); //|| [];
     // if lsBookmarks is not falsey and 
     // has a length greater than 0.
     if (lsBookmarks && lsBookmarks.length > 0) {
@@ -29,7 +28,7 @@ export default function App() {
      * Execute CB function for each elem in bookmarks array.
      * Compares each bookmark url with the current url.
      * If bookmark url not equal to current url return true 
-     * so include in filtered array, if false don't include.
+     * and include in filtered array, if false don't include.
      * filtered is a new array with excluded bookmarks.
      */
     const filtered = bookmarks.filter((bookmark) => {

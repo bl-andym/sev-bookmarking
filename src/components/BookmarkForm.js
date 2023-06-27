@@ -30,7 +30,7 @@ export default function BookmarkForm({ bookmarks, setBookmarks }) {
                 description: data.hybridGraph.description
               };
               // add a bookmark to bookmarks state variable
-              // spread previous b'mrks and add new b'mrk into
+              // spread previous b'mrks and add new b'mrk to bookmarks
               setBookmarks([...bookmarks, newBookmark]);
             } 
             setIsProcessing(false);
