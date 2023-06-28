@@ -9,7 +9,7 @@ export default function App() {
 
   // on mount retrieve localStorage bookmarks
   useEffect(() => {
-    const lsBookmarks = JSON.parse(localStorage.getItem("bookmarks")) || [];
+    const lsBookmarks = JSON.parse(localStorage.getItem("bookmarks")); // || [];
     /** 
      * Check lsBookmarks exists in localstorage
      * Falsey: false, 0 (zero), ''/""/``, undefined, NaN
