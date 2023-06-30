@@ -9,6 +9,9 @@ export default function App() {
 
   // on mount retrieve localStorage bookmarks
   useEffect(() => {
+    // Retrieve value stored in bookmarks in localStorage
+    // getItem() returns a string representation of the stored value
+    // JSON.parse(): convert returned string to an object (then assign) 
     const lsBookmarks = JSON.parse(localStorage.getItem("bookmarks")); // || [];
     /** 
      * Check lsBookmarks exists in localstorage
