@@ -5,6 +5,7 @@ const appId = "a30b822f-a905-47d2-aaf2-ee2f64f1b6b1";
 
 export default function BookmarkForm({ bookmarks, setBookmarks }) {
     const [url, setUrl] = useState("");
+    // boolean used in btn disabled attribute value 
     const [isProcessing, setIsProcessing] = useState(false);
 
     function handleSubmit(e) {
